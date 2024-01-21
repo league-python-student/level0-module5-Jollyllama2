@@ -15,7 +15,7 @@ where the code is duplicated).
 #   - 'def' tells the computer the following code is the start of a function
 #     definition
 #   - <function name> is the name of the function. This name is used to
-#     execute the code in the function, also know as calling the function.
+#     execute the code in the function, also known as calling the function.
 #   - <input_variable_1> is an input variable. They are optional. There can be
 #     no input variables or there can be several. If there is more than 1 input
 #     variable, they're separated by commas.
