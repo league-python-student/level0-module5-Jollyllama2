@@ -1,13 +1,18 @@
 """
 Have the turtle draw a row of houses.
 """
+import turtle
 from tkinter import messagebox, simpledialog, Tk
 
 
 if __name__ == '__main__':
     # TODO)
+
     #   1) Move the turtle to the left side of the window near the bottom.
-    #   2) Draw ONE flat-topped house with height=100 and green grass after it.
+
+    my_turtle = turtle.Turtle()
+    my_turtle. goto(x = -10, y = -10 )
+    #   2) Draw ONE flat-topped house with height=100 and green grass after it.]
     #   3) Put the code that drew the house into a function called draw_house
     #      HINT: Only the code that draws one house should go in this function.
     #   4) Using the function you just created, draw 10 houses.
