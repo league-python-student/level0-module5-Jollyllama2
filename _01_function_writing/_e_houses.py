@@ -2,8 +2,10 @@
 Have the turtle draw a row of houses.
 """
 import turtle
-from tkinter import messagebox, simpledialog, Tk
+from    tkinter import messagebox, simpledialog, Tk
 
+window = Tk()
+window.withdraw()
 
 if __name__ == '__main__':
     # TODO)
@@ -11,8 +13,37 @@ if __name__ == '__main__':
     #   1) Move the turtle to the left side of the window near the bottom.
 
     my_turtle = turtle.Turtle()
-    my_turtle. goto(x = -10, y = -10 )
+    my_turtle.penup()
+    my_turtle.goto(-390,150)
+    my_turtle.pendown()
     #   2) Draw ONE flat-topped house with height=100 and green grass after it.]
+    def draw_house  ():
+        for i in range (10):
+            my_turtle.forward(20)
+            my_turtle.left(90)
+            my_turtle.forward(50)
+            my_turtle.right (90)
+            my_turtle.forward(50)
+            my_turtle.right(90)
+            my_turtle.forward(50)
+            my_turtle. left(90)
+    def pointy_house ():
+        for i in range (10):
+            my_turtle.forward(20)
+            my_turtle.left(90)
+            my_turtle.forward(50)
+            my_turtle.right(90)
+            my_turtle.forward(50)
+            my_turtle.right(120)
+            my_turtle.forward(30)
+            my_turtle.right(120)
+            my_turtle.forward(30)
+            my_turtle.right(120)
+            my_turtle.forward(50)
+
+
+    #draw_house()
+    pointy_house()
     #   3) Put the code that drew the house into a function called draw_house
     #      HINT: Only the code that draws one house should go in this function.
     #   4) Using the function you just created, draw 10 houses.
@@ -30,4 +61,5 @@ if __name__ == '__main__':
     #      (JUST the roof part): draw_pointy_roof, draw_flat_roof
     #   11) By calling the correct "roof" function, make large houses have
     #      flat roofs and all the others have pointy roofs.
-    pass
+
+    turtle.done()

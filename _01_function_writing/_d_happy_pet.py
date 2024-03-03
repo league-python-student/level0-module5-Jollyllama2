@@ -18,16 +18,16 @@ if __name__ == '__main__':
         action = simpledialog.askstring(title= 'wsg', prompt= 'Do you want to play, swim,or be a good person')
         if action == 'play':
             happiness += 5
-            messagebox.showinfo(title='Wsg bruv', prompt = 'your pets happiness increased  by 5, u need 5 more points to win the game!')
+            messagebox.showinfo(title='Wsg bruv', message = 'your pets happiness increased  by 5, u need 5 more points to win the game!')
         elif action == 'swim':
             happiness += 4
-            messagebox.showinfo(title= ' AYO', prompt = 'your pets happiness increased by 4, u need 6 more points to beat the game! ')
+            messagebox.showinfo(title= ' AYO', message = 'your pets happiness increased by 4, u need 6 more points to beat the game! ')
         elif action == 'be a good person' and pet == 'Kanye':
-            messagebox.showinfo(title = 'wsg good, dont be grant', prompt = ' Kanye is mad at u for being a good person, and attacks. U lost all points')
+            messagebox.showinfo(title = 'wsg good, dont be grant', message = ' Kanye is mad at u for being a good person, and attacks. U lost all points')
             happiness -= 0
         elif action == 'be a good person' and pet == 'dog' and pet == 'cat' and pet == 'turtle' and pet == 'snake' and pet == 'rabbit' and pet == 'fish':
             happiness += 10
-            messagebox.showinfo(title= ' free robux', prompt = 'You got 10 happiness points, AKA the goal for this game')
+            messagebox.showinfo(title= ' free robux', message = 'You got 10 happiness points, AKA the goal for this game')
 
 
 
