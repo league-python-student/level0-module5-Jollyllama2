@@ -18,7 +18,7 @@ if __name__ == '__main__':
     my_turtle.pendown()
     #   2) Draw ONE flat-topped house with height=100 and green grass after it.]
     def draw_house  ():
-        for i in range (10):
+        for i in range (11):
             my_turtle.forward(20)
             my_turtle.left(90)
             my_turtle.forward(50)
@@ -32,17 +32,21 @@ if __name__ == '__main__':
             my_turtle.forward(20)
             my_turtle.left(90)
             my_turtle.forward(50)
-            my_turtle.right(90)
-            my_turtle.forward(50)
+            my_turtle.left(120)
             my_turtle.right(120)
+            my_turtle.right(60)
             my_turtle.forward(30)
-            my_turtle.right(120)
+            my_turtle.right(60)
             my_turtle.forward(30)
-            my_turtle.right(120)
+            my_turtle.right(110)
+            my_turtle.right(-50)
             my_turtle.forward(50)
+            my_turtle.left(90)
+            my_turtle.forward(20)
 
 
-    #draw_house()
+
+    #xddraw_house()
     pointy_house()
     #   3) Put the code that drew the house into a function called draw_house
     #      HINT: Only the code that draws one house should go in this function.
