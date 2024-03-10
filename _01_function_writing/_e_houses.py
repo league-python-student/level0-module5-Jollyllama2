@@ -2,6 +2,7 @@
 Have the turtle draw a row of houses.
 """
 import turtle
+import random
 from    tkinter import messagebox, simpledialog, Tk
 
 window = Tk()
@@ -18,20 +19,22 @@ if __name__ == '__main__':
     my_turtle.pendown()
     #   2) Draw ONE flat-topped house with height=100 and green grass after it.]
     def draw_house  ():
-        for i in range (11):
+        height = random.randint(25,250)
+        for i in range (1):
             my_turtle.forward(20)
             my_turtle.left(90)
-            my_turtle.forward(50)
+            my_turtle.forward(height)
             my_turtle.right (90)
             my_turtle.forward(50)
             my_turtle.right(90)
-            my_turtle.forward(50)
+            my_turtle.forward(height)
             my_turtle. left(90)
     def pointy_house ():
-        for i in range (10):
+        height = random.randint(25,250)
+        for i in range (1):
             my_turtle.forward(20)
             my_turtle.left(90)
-            my_turtle.forward(50)
+            my_turtle.forward(height)
             my_turtle.left(120)
             my_turtle.right(120)
             my_turtle.right(60)
@@ -40,14 +43,21 @@ if __name__ == '__main__':
             my_turtle.forward(30)
             my_turtle.right(110)
             my_turtle.right(-50)
-            my_turtle.forward(50)
+            my_turtle.forward(height)
             my_turtle.left(90)
             my_turtle.forward(20)
+    for x in range(9):
+        if random.randint(0,1)  % 2 == 0:
+            draw_house()
+        else:
+            pointy_house()
 
 
 
-    #xddraw_house()
-    pointy_house()
+
+
+    #draw_house()
+    #pointy_house()
     #   3) Put the code that drew the house into a function called draw_house
     #      HINT: Only the code that draws one house should go in this function.
     #   4) Using the function you just created, draw 10 houses.
