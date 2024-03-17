@@ -8,11 +8,21 @@ from tkinter import messagebox, simpledialog, Tk
 
 if __name__ == '__main__':
     # TODO)
-    print(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89)
+
     #  here is more than one way to code a solution to this.
     #  The following steps give you some guidelines for one of them.
     #  1. Declare and initialize three int variables: number1, number2,
-    #     and sum.
+    #     and sum.z
+    a = 0
+    b = 1
+    for i in range(12):
+        c = b+a
+        a = b
+        b = c
+        print(c)
+
+
+
     #  2. Initialize number1 and number2 to the first two numbers of the
     #     fibonacci sequence (0 and 1) and print both numbers.
     #  3. Use a for loop that calculates the sum of the two numbers and

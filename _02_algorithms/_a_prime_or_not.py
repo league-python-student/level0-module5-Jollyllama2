@@ -12,8 +12,17 @@ if __name__ == '__main__':
     #  2. Use a for loop, if statement, and modulo to find if the number
     #     is prime
     num = int(num)
-    for x in range (num):
-        if x % 2 == 0:
+    max = (num//2)
+    primes = []
+    for x in range (2,max):
+        if num %x == 0:
+            messagebox.showinfo(title='hi', message= 'your num isnt prime ')
+        else:
+            primes.append(num)
+
+
+
+
 
     #  3. If the number is divisible by any number other than 1 or itself,
     #     the number is not prime.
