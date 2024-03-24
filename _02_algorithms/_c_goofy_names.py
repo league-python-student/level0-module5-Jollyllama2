@@ -7,11 +7,21 @@ from tkinter import messagebox, simpledialog, Tk
 if __name__ == '__main__':
     # TODO)
     #  1. Ask the user to enter their name.
-    BOI = simpledialog.askstring(title='wsg ', prompt='What be ur name, sonny boi????')
+    tenge  = simpledialog.askstring(title='wsg ', prompt='What be ur name, sonny boi????')
     #  2. Use a loop to alternately modify each character of the name into
     #     uppercase and lowercase letters until a new "goofy" representation
-    #     of their name has been constructed.
-    for i in range(length(BOI)):
+    #     of  name has been constructed.
+    fh =''
+    for i in range(len((tenge))):
+        fh +=tenge[i].upper()
+
+    print(fh)
+
+
+
+
+
+
 
     #     For example, if they enter their name as Alexander Hamilton
     #     their goofy name will be AlExAnDeR HaMiLtOn
