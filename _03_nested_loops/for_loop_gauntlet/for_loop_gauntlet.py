@@ -43,10 +43,26 @@ if __name__ == '__main__':
         for j in range(3):
             print(f"{i} {j}")
 
-    for i in range(9):
-        for j in range(1):
-            for m in range(1):
-                print(f'{i} {j} {m}')
+    for i in range(0,9,3):
+        for j in range( i +1, i + 4 ):
+            print( f'{j} ', end = '')
+        print("")
+
+
+    for i in range(-1, 100, 1):
+        for j in range(i +1, i+ 2):
+                print(f'{i} {j} {i} {j} {i} {j} {i} {j} {i} {j}', end = "")
+        print('')
+
+
+    for i in range(5):
+        for j in range(i + 1):
+           print( '* ' , end = '')
+        print('')
+
+
+
+
 
 
 
